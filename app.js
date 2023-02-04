@@ -33,6 +33,11 @@ app.use("/auth", authRoute);
 app.use("/hotels", hotelsRoute);
 app.use("/users", usersRoute);
 
+// Error handling
+app.use((err, req, res, next) => {
+  return res.sendStatus(500).json("Error in getting the requested route ");
+});
+
 app.get("/", (req, res) => {
   return res.json({ name: "Akaris", age: 56 });
 });
