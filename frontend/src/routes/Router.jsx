@@ -3,9 +3,9 @@ import {
   } from "react-router-dom";
 import About from "../components/About";
 import Contact from "../components/Contact";
-import Home from "../components/Home";
-import Hotels from "../pages/Hotels";
-import SingleHotel from "../pages/SingleHotel";
+import Home from "../pages/home/Home";
+import Hotels from "../pages/hotels/Hotels";
+import SingleHotel from "../pages/single-hotel/SingleHotel";
 
 
 export  const Router = createBrowserRouter([

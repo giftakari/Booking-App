@@ -1,10 +1,11 @@
-import React from 'react'
+
 import {Link} from 'react-router-dom'
+import NavBar from '../../components/navbar/NavBar'
 
 function Home() {
     return (
         <div>
-        <h1>Hello World</h1>
+        <NavBar />
         <Link to='about'>About Us</Link>
       </div>
     )
